@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_edittext"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <CheckBox
+                android:id="@+id/todocheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/yellow"
+                android:checked="false"
+                android:paddingStart="10dp" />
+
+            <TextView
+                android:id="@+id/recyclerTaskText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/todocheckBox"
+                android:gravity="center_vertical"
+                android:paddingStart="7dp"
+                android:text="Task"
+                android:textSize="20sp"
+
+                />
+
+
+        </LinearLayout>
+        >
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

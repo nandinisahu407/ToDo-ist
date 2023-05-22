@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow2"
+    android:orientation="vertical"
+    tools:context=".Profile_user">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/month_year_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/margarine"
+            android:hint="Month"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <com.example.todo.CustomCalendarView
+            android:id="@+id/calendar_view"
+            style="@style/CustomCalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#251212"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/custom_edittext"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/current_streak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Current Streaks"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/margarine"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/longest_streak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Longest Streaks"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/margarine"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <Button
+            android:id="@+id/analysebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:drawableRight="@drawable/baseline_keyboard_double_arrow_right_24"
+            android:drawablePadding="2dp"
+            android:fontFamily="@font/margarine"
+            android:padding="10dp"
+            android:text="Task Analysis"
+            android:textAlignment="center"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/white"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bottomNavigationView"
+            android:layout_marginEnd="20dp"
+            app:labelVisibilityMode="labeled"
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_menu"/>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

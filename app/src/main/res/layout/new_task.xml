@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogbkg">
+<!--    android:backgroundTint="#EFEDEA">-->
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/round_remove_24" />
+
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="10dp"
+        android:background="#B3B1A5"
+        android:hint="Add New Task"
+        android:paddingStart="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/newTaskButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/newTaskText"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        android:text="Save Task"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+
+
+</RelativeLayout>
