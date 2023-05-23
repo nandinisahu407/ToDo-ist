@@ -12,6 +12,12 @@ This is a Java based To DO App which uses firebase for authentication and data s
 7. It generates User Report based on it's Completion Rate<br>
 
 
+## Demo
+<br>
+
+
+https://github.com/nandinisahu407/ToDo-ist/assets/109886925/422c4285-4a86-4deb-a8d1-615bd50ebac7
+
 ## Installation
 
 1. Clone the repository to your local machine:
